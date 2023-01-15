@@ -13,6 +13,7 @@
 		B326ABA12973F12900B3F477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B326AB9F2973F12900B3F477 /* Main.storyboard */; };
 		B326ABA32973F12A00B3F477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B326ABA22973F12A00B3F477 /* Assets.xcassets */; };
 		B326ABA62973F12A00B3F477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B326ABA42973F12A00B3F477 /* LaunchScreen.storyboard */; };
+		B326ABB12973F45D00B3F477 /* ImageRecognitionModelMaker.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B326ABB02973F45D00B3F477 /* ImageRecognitionModelMaker.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B326ABA22973F12A00B3F477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B326ABA52973F12A00B3F477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B326ABA72973F12A00B3F477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B326ABB02973F45D00B3F477 /* ImageRecognitionModelMaker.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageRecognitionModelMaker.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		B326AB982973F12900B3F477 /* RecognitionApp */ = {
 			isa = PBXGroup;
 			children = (
+				B326ABB02973F45D00B3F477 /* ImageRecognitionModelMaker.mlmodel */,
+				B326ABA72973F12A00B3F477 /* Info.plist */,
 				B326AB992973F12900B3F477 /* AppDelegate.swift */,
 				B326AB9B2973F12900B3F477 /* SceneDelegate.swift */,
-				B326AB9D2973F12900B3F477 /* ViewController.swift */,
-				B326AB9F2973F12900B3F477 /* Main.storyboard */,
-				B326ABA22973F12A00B3F477 /* Assets.xcassets */,
-				B326ABA42973F12A00B3F477 /* LaunchScreen.storyboard */,
-				B326ABA72973F12A00B3F477 /* Info.plist */,
+				B326ABAF2973F16400B3F477 /* Controllers */,
+				B326ABAD2973F15300B3F477 /* Supporting Files */,
+				B326ABAE2973F15E00B3F477 /* Views */,
 			);
 			path = RecognitionApp;
+			sourceTree = "<group>";
+		};
+		B326ABAD2973F15300B3F477 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B326ABA22973F12A00B3F477 /* Assets.xcassets */,
+				B326ABA42973F12A00B3F477 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B326ABAE2973F15E00B3F477 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B326AB9F2973F12900B3F477 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B326ABAF2973F16400B3F477 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B326AB9D2973F12900B3F477 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				B326AB9E2973F12900B3F477 /* ViewController.swift in Sources */,
 				B326AB9A2973F12900B3F477 /* AppDelegate.swift in Sources */,
 				B326AB9C2973F12900B3F477 /* SceneDelegate.swift in Sources */,
+				B326ABB12973F45D00B3F477 /* ImageRecognitionModelMaker.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
